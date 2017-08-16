@@ -1,4 +1,4 @@
-package com.chinabluedon.basicknowledgedemo.annotation;
+package com.chinabluedon.basicknowledgedemo.annotation.base;
 
 /**
  * @author ht

@@ -1,4 +1,4 @@
-package com.chinabluedon.basicknowledgedemo.annotation;
+package com.chinabluedon.basicknowledgedemo.annotation.project;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,15 +6,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author ht
- * @time 2017/8/16  17:50
+ * @author 胡腾
+ * @time 2017/8/16  22:04
  * @desc ${TODD}
  */
-@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ViewInject {
+@Target(ElementType.TYPE)
+public @interface Table {
 
-    int id ();//控件id
-
-    boolean clickable () default false;
+    String value();//表名
 }
