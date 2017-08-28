@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * @time 2017/8/16  17:38
  * @desc ${TODD}
  */
-@Target(ElementType.TYPE)
+@Target({ElementType.TYPE,ElementType.FIELD,ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ContentView {
     int value();//布局xml文件的id
